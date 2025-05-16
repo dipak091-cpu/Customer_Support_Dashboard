@@ -1,0 +1,368 @@
+* {
+	box-sizing: border-box;
+}
+
+#agentsPerTicketBoard {
+	border: 1px rgba(0, 0, 0, 0.1) solid;
+	min-height: 300px;
+}
+
+#avatar {
+	width: 50px;
+}
+
+body {
+	color: rgb(196,210,255);
+    font-family: sans-serif;
+	font-size: 1.6rem;
+	margin: auto;
+}
+
+.bottom {
+	position: absolute;
+	bottom: 0;
+}
+
+button {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+button:hover {
+	opacity: 0.75;
+}
+
+.center {
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+}
+
+.center.middle {
+	transform: translate(-50%, -50%);
+}
+
+.container {
+	position: relative;
+}
+
+#copyright {
+	text-align: center;
+}
+
+#customersPerAgentBoard {
+	min-height: 300px;
+}
+
+#dashboard {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+#dashboard > div:first-of-type {
+	border: 1px rgb(26,39,83) solid;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+	max-width: 330px;
+}
+
+#dashboard > div:first-of-type > div {
+	margin: 20px;
+}
+
+#dashboard > div:first-of-type > div > div {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	width: 275px;
+}
+
+#dashboard > div:not(#dashboard > div:first-of-type) {
+	border: 1px rgba(0, 0, 0, 0.1) solid;
+	margin: 5px;
+}
+
+#dashboard-container {
+	background-color: rgb(56,69,113);
+	border-radius: 0;
+	margin-top: 226px;
+	padding: 1px 20px 30px;
+}
+
+div {
+	border-radius: 10px;
+}
+
+figcaption {
+	margin-left: 10px;
+}
+
+figure {
+	align-items: center;
+	display: flex;
+}
+
+footer {
+	background-color: rgb(26,39,83);
+	height: 100px;
+}
+
+h1 {
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+h2 {
+	font-size: 3.25rem;
+}
+
+.hidden {
+	display: none;
+}
+
+.highcharts-background {
+	fill: rgb(196,210,255);
+}
+
+html {
+	/* Setting a base font size of 10px give us easier rem calculations
+	   Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth */
+	font-size: 10px;
+}
+
+#navbar i {
+	color: rgb(196,210,255);
+	font-size: 3rem;
+}
+
+main {
+	height: auto;
+	min-height: calc(100vh - 100px);
+}
+
+.middle {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#navbar {
+	align-items: center;
+	background-color: rgb(26,39,83);
+	box-shadow: 0 3px 6px 0 rgba(0,0,0,.1),0 1px 3px 0 rgba(0,0,0,.08);
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+#navbar > figure {
+	cursor: pointer;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin: 0;
+	width: 200px;
+}
+
+#navbar > figure > figcaption {
+	width: 100px;
+}
+
+#navbar > figure > img {
+	width: 50px;
+}
+
+#navbar > span {
+	align-items: center;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.notification-button {
+	position: relative;
+}
+
+.notification-button span {
+	background-color: rgb(255, 0, 0);
+	border-radius: 50%;
+	color: rgb(255, 255, 255);
+	padding: 1px 5px;
+	position: absolute;
+	right: 5px;
+	top: 0px;
+}
+
+#numOfAgentsBoard img, #numOfCustomersBoard img, #openTicketsBoard img {
+	width: 25px;
+}
+
+#numOfAgentsBoard, #numOfCustomersBoard, #openTicketsBoard {
+	background-color: rgb(0,14,59);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding-left: 10px;
+}
+
+#numOfAgentsBoard > div, #numOfCustomersBoard > div, #openTicketsBoard > div {
+	height: 100px;
+}
+
+#numOfAgentsBoard > div, #numOfCustomersBoard > div, #openTicketsBoard > div, #resolutionTimeBoard {
+	background-color: rgb(196,210,255);
+	color: rgb(0,14,59);
+	padding: 0 10px;
+}
+
+#numOfAgentsBoard p:last-of-type, #numOfCustomersBoard p:last-of-type, #openTicketsBoard p:last-of-type, #resolutionTimeBoard p:last-of-type {
+	font-size: 2rem;
+}
+
+#resolutionTimeBoard {
+	background-color: rgb(87,101,146);
+	border-radius: 5px;
+	display: flex;
+	height: 150px;
+	padding: 2px;
+	text-align: center;
+}
+
+#resolutionTimeBoard > div {
+	background-color: rgb(196,210,255);
+	border-radius: 5px;
+	color: rgb(0,14,59);
+	margin: 2px;
+	padding: 0 10px;
+}
+
+#resolutionTimeBoard p:nth-of-type(1) {
+	margin-bottom: 0;
+}
+
+#resolutionTimeBoard p:nth-of-type(2) {
+	font-size: 1.5rem;
+	margin-top: 0;
+}
+
+.right {
+	position: absolute;
+	right: 0;
+}
+
+#sidebar {
+	background-color: rgb(0,14,59);
+	box-shadow: 0 3px 6px 0 rgba(0,0,0,.1),0 1px 3px 0 rgba(0,0,0,.08);
+	height: 100vh;
+	position: fixed;
+	width: 250px;
+	z-index: 1;
+}
+
+#sidebar img {
+	width: 40px;
+}
+
+#sidebar li {
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	padding-right: 20px;
+	width: 100%;
+}
+
+#sidebar li:first-of-type {
+	background-color: rgb(56,69,113);
+}
+
+#sidebar li:hover:not(#sidebar li:first-of-type) {
+	background-color: rgb(26,39,83);
+}
+
+#sidebar li span {
+	font-size: 2rem;
+}
+
+#sidebar ul {
+	padding: 0;
+}
+
+.top {
+	position: absolute;
+	top: 0;
+}
+
+@media (min-width: 461px) {
+	
+	#resolutionTimeBoard {
+		height: 130px;
+	}
+}
+
+@media (min-width: 653px) {
+	
+	#resolutionTimeBoard {
+		height: 115px;
+	}
+}
+
+@media (min-width: 720px) {
+
+	#dashboard-container {
+		margin-left: 250px;
+		margin-top: 80px;
+	}
+
+	#navbar {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	#navbar > span {
+		flex-direction: row;
+	}
+}
+
+@media (min-width: 1080px) {
+
+	.chart {
+		max-width: 376px;
+	}
+
+}
+
+@media (min-width: 1008px) {
+
+	#dashboard > div:first-of-type {
+		max-width: 656px;
+	}
+}
+
+@media (min-width: 1273px) {
+
+	#dashboard > div:first-of-type {
+		max-width: 1000px;
+	}
+}
+
+@media (min-width: 1280px) {
+
+	.chart {
+		max-width: 450px;
+	}
+
+}
+
+@media (min-width: 1366px) {
+
+	.chart {
+		max-width: 343px;
+	}
+
+}
