@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Customer Support System Dashboard #
 
 This project uses SQL, PHP, HTML, and JavaScript to generate reports from mock customer support data.
@@ -356,3 +357,6 @@ We may display the results like this:
 ![Agent Ratings Chart](img/Agent%20Ratings%20Chart.jpeg)
 
 <small>This project is based on the guide "[Tracking Customer Service Metrics with SQL](https://mode.com/blog/tracking-customer-service-metrics/)."</small>
+=======
+# Customer_Support_Dashboard
+>>>>>>> 4693c51b09ff8600256ded382e45b08d54197bbf
